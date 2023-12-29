@@ -1,0 +1,19 @@
+{
+  "name": "modulermaker",
+  "version": "1.0.0",
+  "description": "Modulermaker is a versatile toolkit designed to simplify the process of generating robust and structured modules for MongoDB database schema management using Mongoose and TypeScript. Seamlessly create model interfaces, schemas, controllers, services, and routes with predefined templates, empowering developers to expedite the setup of scalable data models within their Node.js applications. Effortlessly craft modular, maintainable, and standardized code for efficient database interactions, reducing development time and enhancing project scalability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose"
+  ],
+  "author": "Sk Jasimuddin",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "mongoose": "^6.0.0"
+  }
+  
+}
