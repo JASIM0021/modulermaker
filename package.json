@@ -7,13 +7,30 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "mongoose"
+    "mongoose",
+    "mongodb",
+    "typescript",
+    "schema",
+    "model",
+    "interface",
+    "database",
+    "nodejs",
+    "development",
+    "toolkit",
+    "code-generator",
+    "schema-builder",
+    "data-modeling",
+    "npm-package",
+    "schema-creator"
   ],
   "author": "Sk Jasimuddin",
   "license": "MIT",
   "dependencies": {
     "fs-extra": "^10.0.0",
     "mongoose": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JASIM0021/modulermaker.git"
   }
-  
 }
