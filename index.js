@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require("fs/promises");
 const path = require("path");
 
@@ -138,4 +140,7 @@ async function main(folder) {
   }
 }
 
-module.exports = { createFiles, main };
+const args = process.argv.slice(2);
+const folderName = args[0];
+
+main(folderName);
