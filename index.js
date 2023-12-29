@@ -2,7 +2,7 @@
 
 const fs = require("fs/promises");
 const path = require("path");
-
+const cwd = process.cwd();
 // ... Your createFiles and main functions ...
 
 async function createFiles(folder) {
@@ -109,16 +109,14 @@ async function createFiles(folder) {
 
   try {
     // Create the folder
-    await fs.mkdir(path.join(__dirname, folder));
+    const folderPath = path.join(cwd, folder);
+    await fs.mkdir(folderPath);
 
     // Loop through each extension and create the corresponding file with dummy content
     for (const extension in extensions) {
       if (extensions.hasOwnProperty(extension)) {
         await fs.writeFile(
-          path.join(
-            __dirname,
-            `${folder}/${folder.toLowerCase()}.${extension}`
-          ),
+          path.join(folderPath, `/${folder.toLowerCase()}.${extension}`),
           extensions[extension]
         );
       }
